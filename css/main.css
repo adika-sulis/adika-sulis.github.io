@@ -23,6 +23,10 @@ body {
   position: relative;
 }
 
+a {
+  text-decoration: none;
+}
+
 .card {
     display: inline-block;
     font-family: "Arial";
@@ -40,7 +44,7 @@ body {
   }
   
   .card .card__content {
-    color: var(--card-secondary-color);
+    color: var(--card-secondary-color) !important;
     font-size: 0.86rem;
   }
   
@@ -48,6 +52,7 @@ body {
     padding: 0;
     font-size: 1.3rem;
     font-weight: bold;
+    color: #000 !important;
   }
   
   .card .card__date {
@@ -63,7 +68,6 @@ body {
     border-bottom-right-radius: var(--card-border-radius);
     bottom: 0;
     right: 0;
-    transition: 0.2s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +80,7 @@ body {
   
   /* hover */
   .card:hover .card__title {
-    color: var(--card-primary-color);
+    color: var(--card-primary-color) !important;
     text-decoration: underline;
   }
   
