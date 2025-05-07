@@ -3,6 +3,7 @@
   --card-primary-color: #7257fa;
   --card-secondary-color: #3c3852;
   --card-bg-color: #dddada;
+  box-sizing: border-box;
 }
 
 body {
