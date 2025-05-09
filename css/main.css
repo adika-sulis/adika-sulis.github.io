@@ -101,3 +101,30 @@ a {
     font-weight: 200;
     color: var(--card-secondary-color);
   }
+
+
+
+
+
+
+
+
+
+  footer {
+    background-color: #313030;
+    height: 1.5rem;
+    bottom: 0;
+    position: absolute;
+    display: flexbox;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  footer p {
+    text-align: center;
+    color: white;
+    font-size: 0.75rem;
+
+  }
