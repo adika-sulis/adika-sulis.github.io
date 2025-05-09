@@ -14,6 +14,8 @@ body {
 
 #title {
     text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
 }
 .card-1 {
   position: absolute;
