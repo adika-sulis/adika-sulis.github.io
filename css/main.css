@@ -30,6 +30,16 @@ a {
   text-decoration: none;
 }
 
+ul {
+  font-size: 0;
+  padding-left: 1rem;
+}
+
+li {
+  font-size: 0.9rem;
+  color: var(--card-secondary-color);
+}
+
 .card {
     display: inline-block;
     font-family: "Arial";
@@ -113,12 +123,13 @@ a {
   footer {
     background-color: #313030;
     height: 1.5rem;
-    bottom: 0;
-    position: absolute;
-    display: flexbox;
+    position: fixed;
+    display:inline-block;
     width: 100%;
     justify-content: center;
     align-items: center;
+    bottom: 0;
+    margin: 0;
 
   }
 
@@ -126,5 +137,16 @@ a {
     text-align: center;
     color: white;
     font-size: 0.75rem;
+    margin: 0;
 
+  }
+
+  @media only screen and (max-width:786px) {
+    footer {
+      height: 0.75rem;
+    }
+
+    footer p {
+      font-size: 0.5rem;
+    }
   }
