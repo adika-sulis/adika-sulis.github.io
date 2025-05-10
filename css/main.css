@@ -12,16 +12,15 @@ body {
     background-color: var(--card-bg-color);
 }
 
-.dark-buttonom {
-  display: inline-block;
-  position: absolute;
-  right: 0;
+  .centered-flex {
+    display: flex;
+    justify-content: center;
   }
 
 #title {
     text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 0rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .card-abs {
   position: absolute;
