@@ -197,8 +197,8 @@ li {
     }
 
     ::selection {
-      background-color: rgba(114, 87, 250, 0.2);
-      color: #aa9ee4;
+      background-color: rgba(114, 87, 250, 0.4);
+      color: #131313;
     }
 
 
