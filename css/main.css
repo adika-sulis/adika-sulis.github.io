@@ -142,6 +142,65 @@ li {
     color: var(--card-secondary-color);
   }
 
+   /* Modal háttér */
+    .modal {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+
+    /* Modal ablak */
+    .modal-content {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      max-width: 400px;
+      text-align: center;
+      animation: fadeIn 0.4s ease;
+    }
+
+    .modal-content h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .modal-content p {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 0;
+    }
+
+    .close-btn {
+      margin-top: 0;
+      padding: 10px 20px;
+      border: none;
+      background-color: var(--card-primary-color);
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .close-btn:hover {
+      background-color: #5c47c4;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    ::selection {
+      background-color: rgba(114, 87, 250, 0.2);
+      color: #18113a;
+    }
+
 
 
 
