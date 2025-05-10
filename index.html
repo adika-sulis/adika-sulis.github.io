@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kezdőlap - ÁSW</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
 
+    <!--Javascript module(s)-->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="./js/dark-mode.js"></script>
+    <!--End of Js-->
 
     <!--META DATA(pl: leírás meg ilyesmik)-->
     <meta data-n-head="1" data-hid="og:type" name="og:type" content="website">
@@ -20,9 +23,11 @@
 
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <meta property="og:image" content="https://raw.githubusercontent.com/adika-sulis/adika-sulis.github.io/refs/heads/main/img/icon.jfif">
+    <!--End of meta data(s)-->
 </head>
 
-<body>
+<body id="body">
+      <button class="dark-buttonom btn btn-outline-light text-dark" title="Sötét mód változtató" onclick="dark()">🌙</button>
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -124,6 +129,7 @@
         <!--End of card number idk xd-->
     </div>
 </div>
+
 <footer class="bg-dark text-white mt-5">
     <div class="container">
         <div class="row">
