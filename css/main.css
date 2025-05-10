@@ -12,9 +12,15 @@ body {
     background-color: var(--card-bg-color);
 }
 
+.dark-buttonom {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  }
+
 #title {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 4rem;
     margin-bottom: 0rem;
 }
 .card-abs {
@@ -149,4 +155,12 @@ li {
     footer p {
       font-size: 0.5rem;
     }
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  .dark {
+    background-color: #141613;
   }
