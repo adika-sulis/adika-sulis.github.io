@@ -5,6 +5,8 @@
   --card-bg-color: #dddada;
 
   --dark-bg: #1b1a1a;
+  --dark-text-title: #b6abec;
+  --dark-text: #ad9dff;
   box-sizing: border-box;
 }
 
@@ -66,12 +68,18 @@ li {
 
 .card.dark {
   background-color: var(--dark-bg);
-  border: 0.1rem solid #e7e7e7;
+  border: 0.3rem solid #302f2f;
   }
 
-  .card.dark .card__title {
-      color: var(--card-primary-color);
+.card__title.dark {
+  color: var(--dark-text-title) !important;
+    background-color: var(--dark-bg)
 
+}
+
+ .card__content.dark, .card__date.dark{
+      color: var(--dark-text) !important;
+    background-color: var(--dark-bg)
   }
   
   .card > * + * {
@@ -79,7 +87,7 @@ li {
   }
   
   .card .card__content {
-    color: var(--card-secondary-color) !important;
+    color: var(--card-secondary-color) ;
     font-size: 0.86rem;
   }
   
@@ -87,7 +95,7 @@ li {
     padding: 0;
     font-size: 1.3rem;
     font-weight: bold;
-    color: #000 !important;
+    color: #000;
   }
   
   .card .card__date {
