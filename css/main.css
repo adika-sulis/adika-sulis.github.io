@@ -12,6 +12,10 @@ body {
     background-color: var(--card-bg-color);
 }
 
+body.dark {
+  background-color: var(--card-secondary-color);
+}
+
   .centered-flex {
     display: flex;
     justify-content: center;
