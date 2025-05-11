@@ -77,6 +77,8 @@ body.dark {
 .card.dark {
   background-color: var(--dark-bg);
   border: 0.3rem solid #302f2f;
+  border-top-left-radius: var(--card-border-radius);
+  border-bottom-right-radius: var(--card-border-radius);
 }
 
 .card__title.dark {
@@ -119,8 +121,8 @@ li.dark {
   position: absolute;
   background: var(--card-primary-color);
   padding: 0.4rem;
-  border-top-left-radius: var(--card-border-radius);
-  border-bottom-right-radius: var(--card-border-radius);
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 0.45rem; /* DON'T CHANGE preferably */
   bottom: 0;
   right: 0;
   display: flex;
@@ -215,7 +217,7 @@ h4 {
 }
 
 .close-btn:hover {
-  background-color: #5c47c4;
+  background-color: #3a298b;
   scale: 1.1;
 }
 
@@ -234,6 +236,11 @@ h4 {
 ::selection {
   background-color: rgba(114, 87, 250, 0.4);
   color: #131313;
+}
+
+.dark ::selection {
+  background-color: rgba(74, 59, 139, 0.4);
+  color: #ffffff;
 }
 
 
