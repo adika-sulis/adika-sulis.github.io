@@ -4,11 +4,11 @@ window.onload = function () {
   }, 500);
 }
 
-  function closeModal() {
-    document.getElementById("alert").style.display = "none";
+function closeModal() {
+  document.getElementById("alert").style.display = "none";
 
-    var elements = document.getElementsByClassName("blurred");
+  var elements = document.getElementsByClassName("blurred");
   for (var i = 0; i < elements.length; i++) {
     elements[i].classList.toggle("blurred");
   }
-  }
+}
