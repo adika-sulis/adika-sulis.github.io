@@ -60,7 +60,7 @@ li {
   box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
   position: relative;
   margin: 1rem 0.25rem;
-
+  width: 100%; 
 }
 
 /* DARK MODE */
@@ -122,7 +122,8 @@ li.dark {
   background: var(--card-primary-color);
   padding: 0.4rem;
   border-top-left-radius: 1rem;
-  border-bottom-right-radius: 0.45rem; /* DON'T CHANGE preferably */
+  border-bottom-right-radius: 0.45rem;
+  /* DON'T CHANGE preferably */
   bottom: 0;
   right: 0;
   display: flex;
@@ -243,32 +244,9 @@ h4 {
   color: #ffffff;
 }
 
-
-
-
-
-
-
-
-
-footer {
-  background-color: #313030;
-  height: 1.5rem;
-  position: fixed;
-  display: inline-block;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  bottom: 0;
-  margin: 0;
-
-}
-
-
 footer p {
   text-align: center;
-  color: white;
-  font-size: 0.75rem;
+  font-size: 1rem;
   margin: 0;
 
 }
