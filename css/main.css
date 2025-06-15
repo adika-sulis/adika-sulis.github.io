@@ -21,6 +21,88 @@ body {
   justify-content: center;
 }
 
+/* >>>>>>> MENU <<<<<<<<< */
+
+.menu {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  background-color: rgb(44, 44, 44);
+  border-radius: 1rem;
+  width: 3rem;
+  border: 0.3rem solid #302f2f;
+  padding: 0 3px;
+  margin-top: 1rem;
+}
+
+.menu.change {
+  border-bottom-right-radius: 0;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: snow;
+  margin: 6px 0;
+  transition: 0.4s;
+  display: flexbox;
+  justify-items: center;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.menuLinks {
+  display: none;
+  font-size: 0;
+  z-index: 0;
+
+  position: absolute;
+  right: 1rem;
+  margin-top: 3.75rem;
+  background-color: rgb(44, 44, 44);
+  border-radius: 1rem;
+  border-top-right-radius: 0;
+  width: 8rem;
+  border: 0.3rem solid #302f2f;
+  padding: 0 0.5rem;
+  text-align: center;
+}
+
+.menuLinks.change {
+  display: block;
+  z-index: 13333;
+}
+
+.menuLinks > a {
+  color: whitesmoke;
+  font-size: 1.1rem;
+  text-decoration: none;
+
+}
+.menuLinks a:hover {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: not-allowed;
+}
+
+/* 
+>>>>>>>>>> END OF MENU <<<<<<<<<
+           ^^^^^^^^^^^
+*/
+
 #title {
   text-align: center;
   margin-top: 1rem;
@@ -60,7 +142,7 @@ li {
   box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
   position: relative;
   margin: 1rem 0.25rem;
-  width: 100%; 
+  width: 100%;
 }
 
 /* DARK MODE */

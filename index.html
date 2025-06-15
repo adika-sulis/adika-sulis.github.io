@@ -29,10 +29,28 @@
         content="https://raw.githubusercontent.com/adika-sulis/adika-sulis.github.io/refs/heads/main/img/icon.jfif">
     <!--End of meta data(s)-->
 </head>
+<script>
+function menu(x) {
+  x.classList.toggle("change");
+   var elements = document.getElementsByClassName("menuLinks");
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].classList.toggle("change");
+  }
+}
+</script>
 
 <body class="theme dark">
     <main class="blurred">
-
+<nav>
+<div class="menu" onclick="menu(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+<div class="menuLinks">
+    <a href="#">Rólam</a>
+</div>
+</nav>
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -234,7 +252,7 @@
                     <div class="modal-content">
                         <h1>Figyelem!</h1>
                         <h3>Kérlek vedd figyelembe, hogy lehetnek hibák mert még nincs kész.</h3>
-                        <h4>Megjegyzés:</h4>
+                        <h4>Fontosabb frissítés:</h4>
                         <p>Sötét mód tovább fejlesztése<br>
                             Befejezett</p>
                             <p>2025. 05. 13. - 18:57</p>
