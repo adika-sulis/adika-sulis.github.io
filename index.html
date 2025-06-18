@@ -30,46 +30,48 @@
     <!--End of meta data(s)-->
 </head>
 <script>
-function menu(x) {
-  x.classList.toggle("change");
-   var elements = document.getElementsByClassName("menuLinks");
-  for (var i = 0; i < elements.length; i++) {
-    elements[i].classList.toggle("change");
-  }
-}
+    function menu(x) {
+        x.classList.toggle("change");
+        var elements = document.getElementsByClassName("menuLinks");
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].classList.toggle("change");
+        }
+    }
 </script>
 
 <body class="theme dark">
     <main class="blurred">
-<nav>
-<div class="menu" onclick="menu(this)">
-  <div class="bar1"></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
-</div>
-<div class="menuLinks">
-    <a href="#">Rólam</a>
-</div>
-</nav>
-        <div class="container">
+         <nav class="container">
+            <div class="row">
+                <div class="col-1">
+                    .
+                </div>
+                <div class="col-10">
+                           <h1 id="title">Üdvözöllek!</h1>
+                </div>
+
+                <div class="col-1">
+                    <div class="menu" onclick="menu(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <div class="menuLinks">
+                        <a href="#">Rólam</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container centered-flex">
             <div class="row">
                 <div class="col-12">
-                    <h1 id="title">Üdvözöllek!</h1>
-                </div>
-
-                <!--DARK MODE-->
-
-                <div class="col-12">
-                    <div class="centered-flex"><button class="btn btn-light btn-md" title="Sötét mód változtató"
-                            onclick="toggleDark()">🌙</button></div>
-                </div>
-
-                <div class="col-12">
-                    <h1>Sulis Projektjeim:</h1>
+                    <button class="btn btn-light btn-md darkMode" title="Sötét mód változtató"
+                        onclick="toggleDark()">🌙</button>
                 </div>
             </div>
         </div>
-
+       
+        <span>Sulis Projektjeim:</span>
         <!-- CARDS-->
         <div class="container">
             <div class="row">
@@ -198,16 +200,17 @@ function menu(x) {
                         </div>
                     </a>
                 </div>
- <!--CARD 4-->
+                <!--CARD 4-->
                 <div class="col-12 col-sm-6 col-md-6 col-lg-4">
                     <a href="./alapvizsga-gyak/">
                         <div class="card card-abs theme dark">
                             <h3 class="card__title theme dark">Alapvizsga gyakorlati feladat
                             </h3>
-                            <p class="card__content theme dark">Ezt azért kaptuk mert tizedikben majd lesz alapvizsga és akkor ezzel lehet gyakorolni.<br>
-                            Nem kötelező. 
-                            <br>
-                            Ilyes fajtájú feladatból majd lesz dolgozat is.
+                            <p class="card__content theme dark">Ezt azért kaptuk mert tizedikben majd lesz alapvizsga és
+                                akkor ezzel lehet gyakorolni.<br>
+                                Nem kötelező.
+                                <br>
+                                Ilyes fajtájú feladatból majd lesz dolgozat is.
                             </p>
                             <ul>
                                 <li class="glyphicon glyphicon-plus theme dark">
@@ -252,9 +255,9 @@ function menu(x) {
                     <div class="modal-content">
                         <h1>Figyelem!</h1>
                         <h3>Kérlek vedd figyelembe, hogy lehetnek hibák mert még nincs kész.</h3>
-                        <h4>Fontosabb frissítés:</h4>
+                        <h4><u>Fontosabb frissítés:</u></h4>
                         <p>A menü hozzáadása után próbáltam rá animációt. Nem nagyon sikerült.</p>
-                            <p>2025. 06. 15. - 23:32</p>
+                        <p>2025. 06. 18. - 21:08</p>
                         <button class="close-btn" onclick="closeModal()">Bezárás</button>
                     </div>
                 </div>
