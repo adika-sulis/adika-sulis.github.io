@@ -29,20 +29,48 @@ span {
 /* >>>>>>> MENU <<<<<<<<< */
 
 .menu {
-  display:inline-block;
+  display: flexbox;
   cursor: pointer;
-  position:absolute;
+  position: absolute;
+  right: 1rem;
   background-color: rgb(44, 44, 44);
   border-radius: 1rem;
   width: 3rem;
   border: 0.3rem solid #302f2f;
   padding: 0 3px;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
+  margin-right: 1.5rem;
+}
+
+@media only screen and (max-width:768px) {
+
+  .menu {
+    margin-right: 12px;
+    right: 0;
+  }
+
+  .menuLinks {
+    right: 0.75rem !important;
+
+  }
+}
+
+#title {
+  text-align: right;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: absolute;
+}
+
+h7 {
+  width: fit-content;
+  font-size: 2rem;
 }
 
 .darkMode {
   position: relative;
   display: inline-block;
+  margin-top: 5rem;
 }
 
 .menu.change {
@@ -73,6 +101,13 @@ span {
   transform: translate(0, -11px) rotate(45deg);
 }
 
+@media only screen and (max-width:768px) {
+  #title {
+    position: absolute;
+    left: 2rem;
+  }
+}
+
 .menuLinks {
   display: none;
   font-size: 0;
@@ -80,9 +115,9 @@ span {
   animation-name: menu;
   animation-duration: 0.2s;
 
-  position: relative;
-  right: 5rem;
-  margin-top: 4rem;
+  position: absolute;
+  right: 2.5rem;
+  margin-top: 3.75rem;
   background-color: rgb(44, 44, 44);
   border-radius: 1rem;
   border-top-right-radius: 0;
@@ -93,24 +128,31 @@ span {
 }
 
 .menuLinks.change {
-  display: block;
+  display: inline-block;
+  position: absolute;
   z-index: 13333;
   animation-name: menu;
   animation-duration: 0.5s;
 }
 
- @keyframes menu {
-  0% {opacity:0;}   
-  100% {opacity:1;}
-  
+@keyframes menu {
+  0% {
+    opacity: 0;
   }
-  
-.menuLinks > a {
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
+.menuLinks>a {
   color: whitesmoke;
   font-size: 1.1rem;
   text-decoration: none;
 
 }
+
 .menuLinks a:hover {
   text-decoration: inherit;
   color: inherit;
@@ -122,11 +164,7 @@ span {
            ^^^^^^^^^^^
 */
 
-#title {
-  text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
+
 
 .card-abs {
   position: absolute;
@@ -285,6 +323,11 @@ li.dark {
 
 }
 
+#modalFontos {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem ;
+}
+
 .modal-content h1,
 h2,
 h3,
@@ -301,6 +344,11 @@ h4 {
   font-size: 1rem;
   color: #333;
   margin-top: 0;
+}
+
+.modal-content~h4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .close-btn {
@@ -345,21 +393,15 @@ h4 {
   color: #ffffff;
 }
 
+footer {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
 footer p {
   text-align: center;
   font-size: 1rem;
   margin: 0;
-
-}
-
-@media only screen and (max-width:786px) {
-  footer {
-    height: 0.75rem;
-  }
-
-  footer p {
-    font-size: 0.5rem;
-  }
 }
 
 button {

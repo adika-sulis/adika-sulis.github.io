@@ -13,6 +13,7 @@
     <!--Javascript module(s)-->
     <script src="./js/dark-mode.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
     <!--End of Js-->
 
     <!--META DATA(pl: leírás meg ilyesmik)-->
@@ -29,39 +30,19 @@
         content="https://raw.githubusercontent.com/adika-sulis/adika-sulis.github.io/refs/heads/main/img/icon.jfif">
     <!--End of meta data(s)-->
 </head>
-<script>
-    function menu(x) {
-        x.classList.toggle("change");
-        var elements = document.getElementsByClassName("menuLinks");
-        for (var i = 0; i < elements.length; i++) {
-            elements[i].classList.toggle("change");
-        }
-    }
-</script>
-
 <body class="theme dark">
     <main class="blurred">
-         <nav class="container">
-            <div class="row">
-                <div class="col-1">
-                    .
+        <div class="centered-flex">
+            <h7 id="title">Üdvözöllek!</h7>
+                <div class="menu" onclick="menu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
                 </div>
-                <div class="col-10">
-                           <h1 id="title">Üdvözöllek!</h1>
+                <div class="menuLinks">
+                    <a href="#">Rólam</a>
                 </div>
-
-                <div class="col-1">
-                    <div class="menu" onclick="menu(this)">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </div>
-                    <div class="menuLinks">
-                        <a href="#">Rólam</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
+        </div>
         <div class="container centered-flex">
             <div class="row">
                 <div class="col-12">
@@ -70,7 +51,7 @@
                 </div>
             </div>
         </div>
-       
+
         <span>Sulis Projektjeim:</span>
         <!-- CARDS-->
         <div class="container">
@@ -242,7 +223,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p>2025 - Ádám xd</p>
+                    <p>2025 - By: Ádám</p>
+                    <p>Discord: adamigxd</p>
                 </div>
             </div>
         </div>
@@ -254,10 +236,10 @@
                 <div class="modal" id="alert">
                     <div class="modal-content">
                         <h1>Figyelem!</h1>
-                        <h3>Kérlek vedd figyelembe, hogy lehetnek hibák mert még nincs kész.</h3>
-                        <h4><u>Fontosabb frissítés:</u></h4>
-                        <p>A menü nem működött telefon nézetem mert a cím mögé került vagy mi. Help. Mindegy, fixálva elvileg.</p>
-                        <p>2025. 06. 18. - 21:08</p>
+                        <h4>Kérlek vedd figyelembe, hogy lehetnek hibák mert még nincs kész.</h4>
+                        <h4 id="modalFontos"><u>Fontosabb frissítés:</u></h4>
+                        <p>A menüt nagy nehezen elméletben kijavítottam végre. Nem kerül végre a szöveg mögé, a szöveg nem foglal el végre egy egész sort. Amennyire egyszerűnek tűnt kijavítani annál háromszázszor nehezebb volt kijavítani.</p>
+                        <p>2025. 07. 06. - 18:19</p>
                         <button class="close-btn" onclick="closeModal()">Bezárás</button>
                     </div>
                 </div>
