@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sütik - ÁSW</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/cookie.css">
+
+    <!--Javascript module(s)-->
+    <script src="../js/dark-mode.js" defer></script>
+    <script src="../js/modal.js" defer></script>
+    <script src="../js/menu.js" defer></script>
+    <script src="../js/cookies.js" defer></script>
+    <!--End of Js-->
+
+    <!--META DATA(pl: leírás meg ilyesmik)-->
+    <meta data-n-head="1" data-hid="og:type" name="og:type" content="website">
+    <meta data-n-head="1" data-hid="og:site_name" name="og:site_name" content="Ádika Sulis Weboldala">
+    <meta name="description" content="Ádámnak a csodálatos weboldalait összesítő weboldalának sütikről szóló igéi
+    Az ozt igen">
+    <meta name="theme-color" content="#7257fa">
+    <meta property="og:url" content="https://adika-sulis.github.io/cookies/">
+    <meta name="author" content="Legkomolyabb weboldal eskü">
+
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/adika-sulis/adika-sulis.github.io/refs/heads/main/img/icon.jfif">
+    <!--End of meta data(s)-->
+
+    <script defer src="https://cloud.umami.is/script.js"
+        data-website-id="96d981c5-bef1-4fd8-9c36-399d150c66f8"></script>
+
+</head>
+
+<body class="theme dark">
+    <main>
+        <div class="centered-flex">
+            <h7 id="title">Milyen sütiket gyűjtünk?</h7>
+            <div class="menu" onclick="menu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="menuLinks">
+                <a href="../" target="_blank">Kezdőlap</a>
+                <a href="#" id="rolam">Rólam</a>
+            </div>
+        </div>
+        <div class="container centered-flex">
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-light btn-md darkMode" title="Sötét mód változtató"
+                        onclick="toggleDark()">🌙</button>
+                </div>
+            </div>
+        </div>
+
+        <span>🍪 Süti tájékoztató</span>
+        <div class="container my-3">
+            <p class="px-5">
+                Oldalunk kizárólag statisztikai célból használ sütiket, és <strong>minden egyes látogatáskor
+                    lehetőséget adunk az elfogadásra vagy elutasításra.</strong> Minden alkalommal, amikor valaki
+                megnyitja az oldalt, újra dönthet arról, hogy hozzájárul-e az adatok gyűjtéséhez.<br> <br>
+
+                Ha a felhasználó <strong>elfogadja</strong>, akkor néhány technikai jellegű adatot gyűjtünk az
+                oldalhasználatról.<br>
+                Ha <strong>elutasítja</strong>, akkor nem történik semmilyen adatnaplózás.<br> <br>
+
+                💡 <strong>Fontos</strong>: Az adatok gyűjtése <strong>csak az adott látogatás idejére
+                    vonatkozik</strong>, vagyis amíg a felhasználó nyitva tartja az oldalt.
+                Amint bezárja az oldalt, az adatgyűjtés automatikusan leáll, és a következő megnyitáskor újra el kell
+                fogadni a sütiket, ha szeretnénk statisztikai adatokkal támogatni az oldalt.<br> <br>
+
+                🔒 <strong>Nem</strong> gyűjtünk semmilyen azonosításra alkalmas adatot (pl. IP-cím, név, e-mail), így a látogatás teljesen anonim. Nem adunk el semmilyen információt harmadik félnek. A célunk kizárólag a látogatottság és az eszközhasználat anonim, statisztikai elemzése. <br><br>
+<strong>A sütik által gyűjtött adatok teljesen anonimak, vagyis semmilyen formában nem teszik lehetővé a látogató azonosítását.</strong>
+            </p>
+        </div>
+            <span>🍪 Milyen adatokat gyűjtünk?</span>
+                    <div class="container my-3">
+
+            <ul>
+                <li>📄 Weboldal cím</li>
+                <li>🔗 URL</li>
+                <li>🔙 Előző oldal</li>
+                <li>📅 Dátum</li>
+
+                <li>💻 Platform</li>
+                <li>🖥️ Képernyőfelbontás</li>
+                <li>🌐 Nyelv</li>
+                <li>🌗 Sötét mód</li>
+                <li>📱 Érintőképernyő</li>
+
+                <li>🖱️ Felhasználói interakciók</li>
+                <li>🔘 Elem</li>
+                <li>🆔 ID</li>
+                <li>🎯 Class</li>
+                <li>📄 Szöveg</li>
+            </ul>
+        </div>
+        <div class="centered-flex">
+            <p>📌 A változás jogát fenttarjuk.</p>
+        </div>
+
+    </main>
+
+
+
+
+    <footer class="container-fluid bg-dark text-white mt-5 py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>2025 - By: Ádám</p>
+                    <p>Discord: adamigxd</p>
+                    <div class="centered-flex mt-2">
+                        <a href="https://github.com/adika-sulis" target="_blank"><img src="../img/github.png"
+                                alt="Github" title="Github fiókom"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

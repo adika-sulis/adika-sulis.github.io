@@ -1,0 +1,218 @@
+* {
+    --card-border-radius: 0.75rem;
+    --card-primary-color: #7257fa;
+    --card-secondary-color: #3c3852;
+    --card-bg-color: #dddada;
+
+    --dark-bg: #1b1a1a;
+    --dark-text-title: #b0a0ff;
+    --dark-text: #ffffff;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-size: 0;
+    background-color: var(--card-bg-color);
+}
+
+p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+li {
+    font-size: 1rem;
+}
+
+ul {
+    margin-left: 1.5rem;
+}
+
+
+.centered-flex {
+    display: flex;
+    justify-content: center;
+}
+
+span {
+    font-size: 2rem;
+    margin-left: 4rem;
+}
+
+/* >>>>>>> MENU <<<<<<<<< */
+
+.menu {
+    display: flexbox;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    background-color: rgb(44, 44, 44);
+    border-radius: 1rem;
+    width: 3rem;
+    border: 0.3rem solid #302f2f;
+    padding: 0 3px;
+    margin-top: 1rem;
+    margin-right: 1.5rem;
+}
+
+@media only screen and (max-width:768px) {
+
+    .menu {
+        margin-right: 12px;
+        right: 0;
+    }
+
+    .menuLinks {
+        right: 0.75rem !important;
+
+    }
+}
+
+#title {
+    text-align: right;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: absolute;
+}
+
+h7 {
+    width: fit-content;
+    font-size: 2rem;
+}
+
+.darkMode {
+    position: relative;
+    display: inline-block;
+    margin-top: 5rem;
+}
+
+.menu.change {
+    border-bottom-right-radius: 0;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: snow;
+    margin: 6px 0;
+    transition: 0.4s;
+    display: flexbox;
+    justify-items: center;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+@media only screen and (max-width:768px) {
+    #title {
+        position: absolute;
+        left: 2rem;
+    }
+}
+
+.menuLinks {
+    display: none;
+    font-size: 0;
+    z-index: 0;
+    animation-name: menu;
+    animation-duration: 0.2s;
+
+    position: absolute;
+    right: 2.5rem;
+    margin-top: 3.75rem;
+    background-color: rgb(44, 44, 44);
+    border-radius: 1rem;
+    border-top-right-radius: 0;
+    width: 8rem;
+    border: 0.3rem solid #302f2f;
+    padding: 0 0.5rem;
+    text-align: center;
+}
+
+.menuLinks.change {
+    display: inline-block;
+    position: absolute;
+    z-index: 13333;
+    animation-name: menu;
+    animation-duration: 0.5s;
+}
+
+@keyframes menu {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.menuLinks>a {
+    color: whitesmoke;
+    font-size: 1.1rem;
+    text-decoration: none;
+
+}
+
+.menuLinks #rolam:hover {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: not-allowed;
+}
+
+.menuLinks:first-child {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+
+body.dark {
+    background-color: var(--dark-bg);
+    color: #fff;
+}
+
+.dark {
+    background-color: #141613;
+}
+
+
+::selection {
+    background-color: rgba(114, 87, 250, 0.4);
+    color: #131313;
+}
+
+.dark ::selection {
+    background-color: rgba(74, 59, 139, 0.4);
+    color: #ffffff;
+}
+
+footer {
+    bottom: 0;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+}
+
+button {
+    font-size: 1rem;
+}

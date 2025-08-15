@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="./css/main.css">
 
     <!--Javascript module(s)-->
-    <script src="./js/dark-mode.js"></script>
-    <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/dark-mode.js" defer></script>
+    <script src="./js/modal.js" defer></script>
+    <script src="./js/menu.js" defer></script>
+    <script src="./js/cookies.js" defer></script>
     <!--End of Js-->
 
     <!--META DATA(pl: leírás meg ilyesmik)-->
@@ -29,6 +30,10 @@
     <meta property="og:image"
         content="https://raw.githubusercontent.com/adika-sulis/adika-sulis.github.io/refs/heads/main/img/icon.jfif">
     <!--End of meta data(s)-->
+
+    <script defer src="https://cloud.umami.is/script.js"
+        data-website-id="96d981c5-bef1-4fd8-9c36-399d150c66f8"></script>
+
 </head>
 
 <body class="theme dark">
@@ -160,7 +165,8 @@
                         <div class="card card-abs theme dark">
                             <h3 class="card__title theme dark">Különleges állatok weboldal
                             </h3>
-                            <p class="card__content theme dark">Programozás órán kezdtük el de nem fejeztük be teljesen. <br>
+                            <p class="card__content theme dark">Programozás órán kezdtük el de nem fejeztük be teljesen.
+                                <br>
                             </p>
                             <ul>
                                 <li class="glyphicon glyphicon-plus theme dark">
@@ -217,6 +223,26 @@
                 <!--THE CONTAINER AND ROW END-->
             </div>
         </div>
+
+        <div class="modal-show">
+            <div class="container-fluid" id="cookie-consent">
+                <div class="row">
+                    <div class="col-12 centered-flex">
+                        <div class="modal-cookie text-dark">
+                            <div class="modal-content-cookie text-black p-1" >
+                                <h1>Figyelem!</h1>
+                                <p>Az oldal sütiket használ! <br>Ezt minden látogatásnál el kell fogadnod <br>vagy el kell
+                                    utasítanod.</p>
+                                    <a href="./cookie/index.html" target="_blank">Ide kattintva megtudhatsz többet, hogy miket gyűjtünk</a><br>
+                                <button class="btn btn-outline-success btn-lg mt-2 mx-1" onclick="acceptTracking()">Elfogadom</button>
+                                <button class="btn btn-outline-danger btn-lg mt-2 mx-1
+                                " onclick="declineTracking()">Nem fogadom el</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
 
@@ -243,9 +269,10 @@
                         <h1>Figyelem!</h1>
                         <h4>Kérlek vedd figyelembe, hogy lehetnek hibák mert még nincs kész.</h4>
                         <h4 id="modalFontos"><u>Fontosabb frissítés:</u></h4>
-                        <p>Github elérhetőség.</p>
-                        <p>2025. 07. 12. - 0:16</p>
+                        <p>Süti, süti és még több süti. <br>Elvoltam egy darabig</p>
+                        <p>2025. 08. 16. - 0:10</p>
                         <button class="close-btn" onclick="closeModal()">Bezárás</button>
+
                     </div>
                 </div>
             </div>

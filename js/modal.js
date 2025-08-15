@@ -11,4 +11,8 @@ function closeModal() {
   for (var i = 0; i < elements.length; i++) {
     elements[i].classList.toggle("blurred");
   }
+   var elements = document.getElementsByClassName("modal-show");
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].classList.toggle("modal-show");
+  }
 }

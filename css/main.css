@@ -133,6 +133,7 @@ h7 {
   z-index: 13333;
   animation-name: menu;
   animation-duration: 0.5s;
+  color: white
 }
 
 @keyframes menu {
@@ -200,6 +201,7 @@ li {
   position: relative;
   margin: 1rem 0.25rem;
   width: 100%;
+  border: 0.3rem solid #e6e5e5;
 }
 
 /* DARK MODE */
@@ -308,7 +310,69 @@ li.dark {
   align-items: center;
   justify-content: center;
   z-index: 9999;
+}
+.modal-cookie {
+  position: fixed;
+  display: inline-block;
+  bottom: 0;
+  border: 0.2rem solid #e3d8d8;
+  width: 50%;
+  padding: 15px 20px;
+  z-index: 9999;
+  background-color: #FFFCFB;;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
 
+.modal-content {
+  margin: 0 auto;
+  text-align: center;
+}
+
+  .modal-cookie a {
+    color: rgb(52, 58, 64);
+  }
+
+.modal-cookie p, a {
+  font-size: 1.5rem;
+}
+
+.modal-cookie a:hover {
+  cursor: alias;
+  color: rgb(52, 58, 64);
+}
+
+.modal-cookie * {
+  text-align: center;
+}
+
+
+/* Modal-show >> cookie resz alapbol nem latszodik so if we toggle this it will cuz without it the cookie part would szetesni. Hunglish ja  ||| NOTE FOR MYSELF*/
+.modal-show {
+  display: none;
+
+ 
+}
+
+#cookie-consent {
+ animation-name: modal-cookie;
+  animation-duration: 0.45s;
+}
+
+@keyframes modal-cookie {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width:768px) { 
+  .modal-cookie {
+    width: 100%;
+  }
 }
 
 /* Modal ablak */
@@ -325,7 +389,7 @@ li.dark {
 
 #modalFontos {
   margin-top: 0.5rem;
-  margin-bottom: 1rem ;
+  margin-bottom: 1rem;
 }
 
 .modal-content h1,
@@ -391,6 +455,11 @@ h4 {
 .dark ::selection {
   background-color: rgba(74, 59, 139, 0.4);
   color: #ffffff;
+}
+
+#cookie-consent ::selection {
+  background-color: rgba(114, 87, 250, 0.4);
+  color: #1b1a1a;
 }
 
 footer {

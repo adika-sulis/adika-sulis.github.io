@@ -4,12 +4,11 @@ function toggleDark() {
     elements[i].classList.toggle("dark");
   }
   const buttons = document.querySelectorAll(".btn");
-
   buttons.forEach(btn => {
     if (btn.classList.contains("btn-light")) {
       btn.classList.remove("btn-light");
       btn.classList.add("btn-dark");
-    } else {
+    } else if (btn.classList.contains("btn-dark")) {
       btn.classList.remove("btn-dark");
       btn.classList.add("btn-light");
     }
