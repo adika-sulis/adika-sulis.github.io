@@ -80,10 +80,12 @@ h7 {
 .bar1,
 .bar2,
 .bar3 {
-  width: 35px;
+  width: 30px;
   height: 5px;
   background-color: snow;
-  margin: 6px 0;
+  margin: 6px 2px;
+  right: 0.5px;
+  position: relative;
   transition: 0.4s;
   display: flexbox;
   justify-items: center;
@@ -150,7 +152,7 @@ h7 {
 .menuLinks>a {
   color: whitesmoke;
   font-size: 1.1rem;
-  text-decoration: none;
+  text-decoration: none; 
 
 }
 
@@ -158,6 +160,10 @@ h7 {
   text-decoration: inherit;
   color: inherit;
   cursor: not-allowed;
+}
+
+.a-disabled {
+  text-decoration: line-through !important;
 }
 
 /* 
@@ -311,6 +317,7 @@ li.dark {
   justify-content: center;
   z-index: 9999;
 }
+
 .modal-cookie {
   position: fixed;
   display: inline-block;
@@ -319,7 +326,8 @@ li.dark {
   width: 50%;
   padding: 15px 20px;
   z-index: 9999;
-  background-color: #FFFCFB;;
+  background-color: #FFFCFB;
+  ;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
@@ -329,11 +337,12 @@ li.dark {
   text-align: center;
 }
 
-  .modal-cookie a {
-    color: rgb(52, 58, 64);
-  }
+.modal-cookie a {
+  color: rgb(52, 58, 64);
+}
 
-.modal-cookie p, a {
+.modal-cookie p,
+a {
   font-size: 1.5rem;
 }
 
@@ -351,11 +360,11 @@ li.dark {
 .modal-show {
   display: none;
 
- 
+
 }
 
 #cookie-consent {
- animation-name: modal-cookie;
+  animation-name: modal-cookie;
   animation-duration: 0.45s;
 }
 
@@ -369,7 +378,7 @@ li.dark {
   }
 }
 
-@media only screen and (max-width:768px) { 
+@media only screen and (max-width:768px) {
   .modal-cookie {
     width: 100%;
   }

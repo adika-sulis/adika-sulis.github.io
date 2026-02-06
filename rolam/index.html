@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kezdőlap - ÁSW</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!--Javascript module(s)-->
+    <script src="../js/dark-mode.js" defer></script>
+    <script src="/js/modal.js" defer></script>
+    <script src="../js/menu.js" defer></script>
+    <script src="../js/cookies.js" defer></script>
+    <!--End of Js-->
+
+    <!--META DATA(pl: leírás meg ilyesmik)-->
+    <meta data-n-head="1" data-hid="og:type" name="og:type" content="website">
+    <meta data-n-head="1" data-hid="og:site_name" name="og:site_name" content="Ádika Sulis Weboldala">
+    <meta name="description" content="Ádámnak a csodálatos weboldalait összesítő webolda.
+    Az ozt igen">
+    <meta name="theme-color" content="#7257fa">
+    <meta property="og:url" content="https://adika-sulis.github.io">
+    <meta name="author" content="Legkomolyabb weboldal eskü">
+
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/adika-sulis/adika-sulis.github.io/refs/heads/main/img/icon.jfif">
+    <!--End of meta data(s)-->
+
+    <script defer src="https://cloud.umami.is/script.js"
+        data-website-id="96d981c5-bef1-4fd8-9c36-399d150c66f8"></script>
+
+</head>
+
+<body class="theme dark">
+    <main>
+        <div class="centered-flex">
+            <h7 id="title">Üdvözöllek!</h7>
+            <div class="menu" onclick="menu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="menuLinks">
+                <a href="#">Rólam</a>
+            </div>
+        </div>
+        <div class="container centered-flex">
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-light btn-md darkMode" title="Sötét mód változtató"
+                        onclick="toggleDark()">🌙</button>
+                </div>
+            </div>
+        </div>
+
+        <span>Sulis Projektjeim:</span>
+        <!-- CARDS-->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a href="./karakter/">
+                        <div class="card card-abs theme dark">
+                            <h3 class="card__title theme dark">Ádám
+                            </h3>
+                            <p class="card__content theme dark">Anno '96-ban feladtak egy projekt munka projektet ebben
+                                a
+                                témakörben.
+                                Egy
+                                karaktert kellett létrehozni, de elsőnek Wordben egy történetet kellett neki írni. <br>
+                                Ennek az elkészítése után kellett egy weboldalt neki csinálni. <br>
+                            </p>
+                            <ul>
+                                <li class="glyphicon glyphicon-minus theme dark">
+                                    Nem reszponzív.
+                                </li>
+                            </ul>
+                            <p class="learnMore theme dark"> Kártyára kattinva megnézheted.</p>
+                            <div class="card__date theme dark">
+                                ≈ 2024, 11, 03.
+                            </div>
+                            <div class="card__arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15"
+                                    width="15">
+                                    <path fill="#fff"
+                                        d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    <!--THE CONTAINER AND ROW END-->
+                </div>
+            </div>
+
+            <div class="modal-show">
+                <div class="container-fluid" id="cookie-consent">
+                    <div class="row">
+                        <div class="col-12 centered-flex">
+                            <div class="modal-cookie text-dark">
+                                <div class="modal-content-cookie text-black p-1">
+                                    <h1>Figyelem!</h1>
+                                    <p>Az oldal sütiket használ! <br>Ezt minden látogatásnál el kell fogadnod <br>vagy
+                                        el kell
+                                        utasítanod.</p>
+                                    <a href="./cookie/index.html" target="_blank">Ide kattintva megtudhatsz többet, hogy
+                                        miket gyűjtünk</a><br>
+                                    <button class="btn btn-outline-success btn-lg mt-2 mx-1"
+                                        onclick="acceptTracking()">Elfogadom</button>
+                                    <button class="btn btn-outline-danger btn-lg mt-2 mx-1
+                                " onclick="declineTracking()">Nem fogadom el</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+
+    <footer class="container-fluid bg-dark text-white mt-5 py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>2025 - By: Ádám</p>
+                    <p>Discord: adamigxd</p>
+                    <div class="centered-flex mt-2">
+                        <a href="https://github.com/adika-sulis" target="_blank"><img src="../img/github.png"
+                                alt="Github" title="Github fiókom"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
