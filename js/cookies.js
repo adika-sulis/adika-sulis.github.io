@@ -71,8 +71,8 @@ function acceptTracking() {
 👋 ${getCookie("username")} elfogadta a sütiket és meglátogatta az oldalt:
 
 📄 Cím: ${document.title}
-🔗 URL: ${window.location.href}
-🔙 Előző oldal: ${document.referrer || "nincs"}
+🔗 URL: <${window.location.href}>
+🔙 Előző oldal: <${document.referrer || "nincs"}>
 📅 Dátum: ${now}
 
 💻 Platform: ${navigator.platform}
