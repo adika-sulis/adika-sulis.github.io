@@ -8,6 +8,19 @@ function secret(str) {
 const VISITS_WEBHOOK = secret(VISITS_WEBHOOK_secret);
 const INTERACTIONS_WEBHOOK = secret(INTERACTIONS_WEBHOOK_secret);
 
+document.addEventListener("DOMContentLoaded", function () {
+    if (getCookie("consent") == "true") {
+        try {
+            acceptTracking();
+            document.getElementById("cookie-consent").style.display = "none";
+        } catch (e){
+            console.error("Hiba az elfogadás során:", e);
+            acceptTracking(); 
+        }
+    }
+});
+
+
 function setCookie(name, value, days) {
     const expires = new Date(Date.now() + days * 864e5).toUTCString();
     document.cookie = name + "=" + encodeURIComponent(value) + "; expires=" + expires + "; path=/";
@@ -22,24 +35,40 @@ let trackingAccepted = getCookie("consent") === "true";
 if (!trackingAccepted) {
     document.getElementById("cookie-consent").style.display = "block";
 }
-    function declineTracking() {
+function declineTracking() {
     document.getElementById("cookie-consent").style.display = "none";
-    }
+}
+
+function optOut() {
+    setCookie("consent", "", 0);
+    setCookie("username", "", 0);
+    trackingAccepted = false;
+    alert("Sütik sikeresen törölve!")
+}
 
 function acceptTracking() {
-    trackingAccepted = true;
+    trackingAccepted = true
+    if (getCookie("consent") != "true") {
     setCookie("consent", "true", 365);
-    document.getElementById("cookie-consent").style.display = "none";
+    }
+    if (getCookie("username") == "" || getCookie("username") == null) {
+        let username = prompt("Adj meg egy tetszőleges nevet!", "Parkoló Péter");
+        setCookie("username", username || "Valaki", 365);
+    }
+    try {
+    document.getElementById("cookie-consent").style.display = "none";}
+    catch (e) {
+        console.log("")
+        }
 
 
 
-    // 🔔 Egyszeri látogatási jelentés
     const now = new Date().toLocaleString();
 
     const message = {
         content: `
 <------------------------------------------------->
-👋 Valaki elfogadta a sütiket és meglátogatta az oldalt:
+👋 ${getCookie("username")} elfogadta a sütiket és meglátogatta az oldalt:
 
 📄 Cím: ${document.title}
 🔗 URL: ${window.location.href}
@@ -75,7 +104,6 @@ function isInteractiveElement(el) {
     );
 }
 
-// Interakciók követése
 document.addEventListener("click", function (event) {
     if (!trackingAccepted) return;
 
