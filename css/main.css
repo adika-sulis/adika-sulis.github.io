@@ -152,15 +152,21 @@ h7 {
 .menuLinks>a {
   color: whitesmoke;
   font-size: 1.1rem;
-  text-decoration: none; 
+  text-decoration: none;
 
 }
 
 .menuLinks a:hover {
   text-decoration: inherit;
   color: inherit;
-  cursor: not-allowed;
 }
+.menuLinks a:hover:first-child {
+    cursor: not-allowed;
+}
+.menuLinks a:hover {
+    cursor: pointer;
+}
+
 
 .a-disabled {
   text-decoration: line-through !important;
@@ -474,6 +480,7 @@ h4 {
 footer {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+  bottom: 0px;
 }
 
 footer p {
@@ -484,4 +491,16 @@ footer p {
 
 button {
   font-size: 1rem;
+}
+
+.card-logo {
+  border-radius: 1rem;
+}
+
+.card.dark.cnp-card {
+  border: 0.3rem solid #ff929277;
+}
+
+.card.cnp-card {
+  border: 0.3rem solid #f0bcbc;
 }
