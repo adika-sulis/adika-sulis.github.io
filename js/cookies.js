@@ -13,10 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
         try {
             acceptTracking();
             document.getElementById("cookie-consent").style.display = "none";
-        } catch (e){
+        } catch (e) {
             console.error("Hiba az elfogadás során:", e);
-            acceptTracking(); 
+            acceptTracking();
         }
+    }
+    if (getCookie("consent") != "true") {
+        localStorage.removeItem("username");
     }
 });
 
@@ -41,34 +44,42 @@ function declineTracking() {
 
 function optOut() {
     setCookie("consent", "", 0);
-    setCookie("username", "", 0);
+    localStorage.removeItem("username");
     trackingAccepted = false;
-    alert("Sütik sikeresen törölve!")
+    alert("Sütik sikeresen törölve!");
 }
 
 function acceptTracking() {
     trackingAccepted = true
     if (getCookie("consent") != "true") {
-    setCookie("consent", "true", 365);
+        setCookie("consent", "true", 30);
     }
-    if (getCookie("username") == "" || getCookie("username") == null) {
-        let username = prompt("Adj meg egy tetszőleges nevet!", "Parkoló Péter");
-        setCookie("username", username || "Valaki", 365);
+    if (localStorage.getItem("username") == "" || localStorage.getItem("username") == null) {
+        while (true) {
+            let username = prompt("Adj meg egy tetszőleges nevet!", "Parkoló Péter");
+            if (username.length < 16 && username.length >= 3) {
+                localStorage.setItem("username", username || "Valaki");
+                break;
+            }
+            else {
+                alert("A névnek 3 és 15 karakter között kell lennie. Próbáld újra!");
+            }
+        }
     }
     try {
-    document.getElementById("cookie-consent").style.display = "none";}
+        document.getElementById("cookie-consent").style.display = "none";
+    }
     catch (e) {
-        console.log("")
-        }
+        console.log("" + e);
+    }
 
 
 
     const now = new Date().toLocaleString();
-
     const message = {
         content: `
 <------------------------------------------------->
-👋 ${getCookie("username")} elfogadta a sütiket és meglátogatta az oldalt:
+👋 ${localStorage.getItem("username")} elfogadta a sütiket és meglátogatta az oldalt:
 
 📄 Cím: ${document.title}
 🔗 URL: <${window.location.href}>
