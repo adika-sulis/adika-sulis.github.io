@@ -70,7 +70,7 @@ h7 {
 .darkMode {
   position: relative;
   display: inline-block;
-  margin-top: 5rem;
+  /*margin-top: 5rem;*/
 }
 
 .menu.change {
