@@ -12,7 +12,6 @@
 
 body {
   margin: 0;
-  font-size: 0;
   background-color: var(--card-bg-color);
 }
 
@@ -160,9 +159,7 @@ h7 {
   text-decoration: inherit;
   color: inherit;
 }
-.menuLinks a:hover:first-child {
-    cursor: not-allowed;
-}
+
 .menuLinks a:hover {
     cursor: pointer;
 }
