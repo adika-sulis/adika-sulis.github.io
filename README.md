@@ -1,9 +1,5 @@
 # 💫 About Me:
-🔭 I’m currently working on my website (https://adika-sulis.github.io)<br>🌱 I’m currently learning HTML,  CSS<br>💬 Ask me about anything ig<br>⚡ Fun fact this is a template lol
-
-
-## 🌐 Socials:
-[![TikTok](https://img.shields.io/badge/TikTok-%23000000.svg?logo=TikTok&logoColor=white)](https://tiktok.com/@real.tescos.kifli) 
+🔭 I’m currently working on my website (https://adika-sulis.rf.gd)<br>🌱 I’m currently learning HTML,  CSS<br>💬 Ask me about anything ig<br>⚡ Fun fact this is a template lol
 
 # 💻 Tech Stack:
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat&logo=html5&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=flat&logo=bootstrap&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=flat&logo=github&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=flat&logo=git&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=flat&logo=Canva&logoColor=white)
